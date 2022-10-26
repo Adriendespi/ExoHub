@@ -1,0 +1,16 @@
+
+<p>a</p>
+<input [(ngModel)]="newMessage.sender" />
+<input [(ngModel)]="newMessage.content" />
+<button (click)="SendMessage()">Envoie</button>
+
+<div  style="border: 1px solid black ;">
+ <ul *ngFor="let item of massagelist">
+    <li>
+        {{item.sender}}
+        {{item.content}}
+        {{item.time}}
+    </li>
+ </ul>
+
+</div>
